@@ -17,9 +17,11 @@
   src: url("./../font/Rubik-Bold.ttf");
   font-weight: bold;
 }
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -37,8 +39,7 @@ main h3 {
   text-transform: uppercase;
   border-bottom: 3px solid black;
   text-align: center;
-  color: var(--DarkGrey, #3a3a3a);
-  text-align: center;
+  color: var(--darkGrey);
   font-family: Rubik;
   font-size: 32px;
   font-style: normal;
@@ -47,7 +48,7 @@ main h3 {
   padding-top: 10px;
 }
 main h2 {
-  color: var(--DarkGrey, #3a3a3a);
+  color: var(--darkGrey);
   text-align: center;
   font-family: Roboto;
   font-size: 40px;
@@ -113,6 +114,9 @@ footer p {
   width: 140px;
   height: 140px;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .houses > div:hover {
   background: #fff6e6;
@@ -120,6 +124,7 @@ footer p {
 .houses img {
   width: 121px;
   height: 136px;
+  object-fit: contain;
 }
 
 .characters {
@@ -129,23 +134,31 @@ footer p {
   padding: 30px;
 }
 .characters > div {
-  padding: 30px;
+  width: 25%;
+  padding: 20px 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.characters a {
+  text-decoration: none;
+  display: inline-block;
 }
 .characters img {
   width: 150px;
   height: 150px;
   border-radius: 150px;
-  border: 8px solid var(--Gold, #b99049);
-  background: url(<path-to-image>), lightgray -1.24px 0px/101.653% 141.566% no-repeat;
+  border: 8px solid var(--gold);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   object-fit: cover;
+  display: inline-block;
 }
 .characters p {
   text-align: center;
-  color: var(--Gold, #b99049);
+  color: var(--gold);
+  margin-top: 10px;
+  font-weight: bold;
 }
 
-/* PAGE PERSO */
 .page_perso h3 {
   padding: 50px 50px 0 50px;
 }
@@ -193,7 +206,7 @@ footer p {
     width: 90%;
   }
   header h1,
-header ul {
+  header ul {
     display: none !important;
   }
   header .header__left {
@@ -207,8 +220,10 @@ header ul {
 
   .houses {
     flex-direction: column;
-    align-content: space-around;
+    align-items: center;
+  }
+
+  .characters > div {
+    width: 50%;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
