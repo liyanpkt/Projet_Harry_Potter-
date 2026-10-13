@@ -10,74 +10,40 @@
     <main>
       <header class="header">
         <div class="header__right">
-          <img src="./images/logo/logo.png" alt="Logo Harry Potter" />
+          <img src="./images/logo/logo.png" />
         </div>
         <div class="header__left">
           <h1>Li-Yan Pontiac - Wiki Harry Potter</h1>
-          <img src="./images/menu.png" alt="" />
+          <ul class="nav-menu">
+            <li>MAISONS</li>
+            <li>SORTS</li>
+            <li>CONTACT</li>
+            <li>GALLERIE</li>
+          </ul>
+          <img src="./images/menu.png" alt="menu" id="menu-btn" />
         </div>
       </header>
 
       <section>
         <h3>HOUSES</h3>
         <div class="houses">
-          <div><img src="./images/logo/Gryffindor.png"  /></div>
-          <div><img src="./images/logo/Hufflepuff.png"  /></div>
-          <div><img src="./images/logo/Ravenclaw.png"  /></div>
-          <div><img src="./images/logo/Slytherin.png"  /></div>
+          <div data-house="Gryffindor"><img src="./images/logo/Gryffindor.png" /></div>
+          <div data-house="Hufflepuff"><img src="./images/logo/Hufflepuff.png" /></div>
+          <div data-house="Ravenclaw"><img src="./images/logo/Ravenclaw.png" /></div>
+          <div data-house="Slytherin"><img src="./images/logo/Slytherin.png" /></div>
         </div>
       </section>
 
       <section>
         <h3>Characters</h3>
-        <div class="characters">
-          <div>
-            <a href="details.html">
-              <img src="./images/characters/harry.webp"  />
-              <p>Harry Potter</p>
-            </a>
-          </div>
-
-          <div>
-            <img src="./images/characters/hermione.webp"  />
-            <p>Hermione Granger</p>
-          </div>
-
-          <div>
-            <img src="./images/characters/ron.webp"  />
-            <p>Ron Weasley</p>
-          </div>
-
-          <div>
-            <img src="./images/logo/draco.webp"  />
-            <p>Draco Malfoy</p>
-          </div>
-
-          <div>
-            <img src="./images/characters/cho.webp"  />
-            <p>Cho Chang</p>
-          </div>
-
-          <div>
-            <img src="./images/characters/snape.webp" />
-            <p>Severus Snape</p>
-          </div>
-
-          <div>
-            <img src="./images/characters/mcgonagall.webp"  />
-            <p>Minerva McGonagall</p>
-          </div>
-
-          <div>
-            <img src="./images/characters/cedric.webp"  />
-            <p>Cedric Diggory</p>
-          </div>
-        </div>
+        <div class="characters"></div>
       </section>
     </main>
 
     <footer>
       <p>Wiki Harry Potter is a FANDOM community</p>
     </footer>
+
+    <script src="./js/script.js"></script>
   </body>
 </html>

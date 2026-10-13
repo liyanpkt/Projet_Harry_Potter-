@@ -182,31 +182,31 @@ footer p {
   transition: 0.3s;
 }
 
-.characters > div:nth-child(1):hover img {
+.characters > div.Gryffindor:hover img {
   border-color: var(--red);
 }
-.characters > div:nth-child(1):hover p {
+.characters > div.Gryffindor:hover p {
   color: var(--red);
 }
 
-.characters > div:nth-child(4):hover img {
+.characters > div.Slytherin:hover img {
   border-color: var(--green);
 }
-.characters > div:nth-child(4):hover p {
+.characters > div.Slytherin:hover p {
   color: var(--green);
 }
 
-.characters > div:nth-child(5):hover img {
+.characters > div.Ravenclaw:hover img {
   border-color: var(--blue);
 }
-.characters > div:nth-child(5):hover p {
+.characters > div.Ravenclaw:hover p {
   color: var(--blue);
 }
 
-.characters > div:nth-child(8):hover img {
+.characters > div.Hufflepuff:hover img {
   border-color: var(--yellow);
 }
-.characters > div:nth-child(8):hover p {
+.characters > div.Hufflepuff:hover p {
   color: var(--yellow);
 }
 
