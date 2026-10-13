@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Li-Yan Pontiac - Partiel Harry Potter</title>
+    <title>Li-Yan Pontiac - Wiki Harry Potter</title>
   </head>
   <body class="page_perso">
     <main>
@@ -15,12 +15,12 @@
           </a>
         </div>
         <div class="header__left">
-          <h1>Li-Yan Pontiac - Wiki Harry Potter</h1>
+          <h2>Li-Yan Pontiac - Wiki Harry Potter</h2>
           <img src="./images/menu.png" alt="Menu" id="menu-btn" />
         </div>
       </header>
 
-      <ul class="nav-menu">
+      <ul class="nav-menu" id="nav-menu">
         <li>MAISONS</li>
         <li>SORTS</li>
         <li>CONTACT</li>
@@ -28,38 +28,43 @@
       </ul>
 
       <section>
+        <h3 id="char-name-title">HARRY POTTER</h3>
         <div class="perso">
           <figure class="perso__left">
-            <img src="./images/characters/harry.webp" alt="Harry Potter" />
-            <figcaption>Daniel Radcliffe</figcaption>
+            <img id="char-img" src="./images/characters/harry.webp" alt="Harry Potter" />
+            <figcaption id="char-actor">Daniel Radcliffe</figcaption>
           </figure>
           <div class="perso__right">
             <div>
               <p>Gender</p>
-              <p class="attr">Male</p>
+              <p class="attr" id="char-gender">Male</p>
             </div>
             <div>
               <p>Eye</p>
-              <p class="attr">Green</p>
+              <p class="attr" id="char-eye">Green</p>
             </div>
             <div>
               <p>Hair</p>
-              <p class="attr">Black</p>
+              <p class="attr" id="char-hair">Black</p>
             </div>
             <div>
               <p>Date of birth</p>
-              <p class="attr">31-07-1980</p>
+              <p class="attr" id="char-dob">31-07-1980</p>
             </div>
             <div>
               <p>Patronus</p>
-              <p class="attr">Stag</p>
+              <p class="attr" id="char-patronus">Stag</p>
+            </div>
+            <div id="nicknames-row">
+              <p>Nicknames</p>
+              <p class="attr" id="char-nicknames">-</p>
             </div>
           </div>
         </div>
       </section>
 
       <section class="house__perso">
-        <img src="./images/logo/Gryffindor.png" alt="Gryffindor" />
+        <img id="char-house-logo" src="./images/logo/Gryffindor.png" alt="Gryffindor" />
       </section>
     </main>
 

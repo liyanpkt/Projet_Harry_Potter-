@@ -54,10 +54,9 @@ main h2 {
   color: var(--darkGrey);
   text-align: center;
   font-family: "Rubik", sans-serif;
-  font-size: 40px;
-  font-weight: 400;
+  font-size: 30px;
+  font-weight: bold;
   line-height: normal;
-  margin-bottom: 54px;
 }
 
 footer {
@@ -79,11 +78,18 @@ footer p {
   max-width: 1024px;
   margin: auto;
   padding-top: 20px;
+  align-items: center;
 }
 
 .header h1 {
   margin-bottom: 20px;
   font-family: "Rubik", sans-serif;
+  font-weight: normal;
+}
+
+.page_perso .header h1,
+.page_perso .header h2 {
+  font-weight: bold;
 }
 
 .header__right img {
@@ -95,22 +101,32 @@ footer p {
   width: 100%;
   display: flex;
   align-items: center;
-  text-transform: uppercase;
-}
-
-.header__left ul {
-  display: flex;
   justify-content: space-between;
-  width: 80%;
-}
-
-.header__left ul li {
-  list-style: none;
-  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .header__left img {
   display: none;
+}
+
+.nav-menu {
+  display: none;
+  list-style: none;
+  text-align: center;
+  padding: 15px 0;
+  gap: 15px;
+}
+
+.nav-menu.open {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-menu li {
+  font-weight: bold;
+  color: #3a3a3a;
+  cursor: pointer;
+  letter-spacing: 1px;
 }
 
 .houses {
@@ -129,6 +145,7 @@ footer p {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .houses > div:hover {
@@ -210,6 +227,10 @@ footer p {
   color: var(--yellow);
 }
 
+img.dead {
+  filter: grayscale(100%);
+}
+
 .page_perso .perso {
   background: rgba(185, 144, 73, 0.5);
   padding: 40px 60px;
@@ -248,8 +269,8 @@ footer p {
 .page_perso .perso__right {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  width: 320px;
+  gap: 20px;
+  width: 360px;
 }
 
 .page_perso .perso__right > div {
@@ -268,6 +289,8 @@ footer p {
   font-weight: bold;
   font-family: "Rubik", sans-serif;
   color: #000;
+  text-align: right;
+  max-width: 220px;
 }
 
 .page_perso .house__perso {
@@ -288,7 +311,7 @@ footer p {
   }
 
   header h1,
-  header ul {
+  header h2 {
     display: none !important;
   }
 
@@ -300,6 +323,7 @@ footer p {
   header .header__left img {
     display: block !important;
     height: 70px;
+    cursor: pointer;
   }
 
   .houses {
@@ -315,5 +339,9 @@ footer p {
     flex-direction: column;
     gap: 30px;
     padding: 30px 20px;
+  }
+
+  .page_perso .perso__right {
+    width: 100%;
   }
 }
